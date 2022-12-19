@@ -9,16 +9,16 @@ const add_movie = () => {
         const row = table.insertRow(table.rows.length - 1);
         row.id = 'row_' + table.rows.length;
         row.innerHTML = `
-        <td>${title}</td>
+        <td class="title">${title}</td>
         <td class="poster-container">
           <img
             src="${poster}"
             class="poster"
            alt="${title}"/>
         </td>
-        <td>${year}</td>
-        <td>${rating}</td>
-        <td>${language}</td>
+        <td class="year">${year}</td>
+        <td class="rating">${rating}</td>
+        <td class="language">${language}</td>
         <td class="actions">
           <button class="edit" onclick="edit_movie()">Edit</button>
           <button class="delete" onclick="delete_movie()">Delete</button>

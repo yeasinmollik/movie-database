@@ -125,15 +125,17 @@ td.rating, td.language {
     background-color: transparent;
     outline: none;
     width: 100%;
-    color: #333;
+    color: black;
+    font-weight: bold;
     font-family: "Poppins", sans-serif;
+    margin: 20px auto;
 
 }
 
 
 .form-control::placeholder {
     color: inherit;
-    opacity: .5;
+    opacity: .4;
 }
 
 .form-control:hover, .form-control:focus {
