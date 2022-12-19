@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
     <title>Document</title>
-  </head>
+</head>
 
-  <body>
-    <div class="wrapper">
-      <table id="data_table">
+<body>
+<div class="wrapper">
+    <table id="data_table">
         <thread>
-          <tr>
-            <th>Title</th>
-            <th>Poster</th>
-            <th>Year</th>
-            <th>Rating</th>
-            <th>Language</th>
-            <th>Actions</th>
-          </tr>
+            <tr>
+                <th>Title</th>
+                <th>Poster</th>
+                <th>Year</th>
+                <th>Rating</th>
+                <th>Language</th>
+                <th>Actions</th>
+            </tr>
         </thread>
         <tbody id="table_body">
-          <tr>
+        <tr>
             <td>Harry Potter</td>
             <td class="poster-container">
-              <img
-                src="https://image.tmdb.org/t/p/w1280/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
-                class="poster"
-              />
+                <img
+                        src="https://image.tmdb.org/t/p/w1280/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+                        class="poster"
+                />
             </td>
             <td>2001</td>
             <td>7.6</td>
             <td>English</td>
             <td class="actions">
-              <button class="edit" onclick="edit_movie()">Edit</button>
-              <button class="delete" onclick="delete_movie()">Delete</button>
+                <button class="edit" onclick="edit_movie()">Edit</button>
+                <button class="delete" onclick="delete_movie()">Delete</button>
             </td>
-          </tr>
+        </tr>
 
-          <tr>
+        <tr>
             <td>Titanic</td>
             <td class="poster-container">
-              <img
-                src="https://image.tmdb.org/t/p/w1280/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
-                class="poster"
-              />
+                <img
+                        src="https://image.tmdb.org/t/p/w1280/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+                        class="poster"
+                />
             </td>
             <td>1997</td>
             <td>7.9</td>
             <td>English</td>
             <td class="actions">
-              <button class="edit" onclick="edit_movie()">Edit</button>
-              <button class="delete" onclick="delete_movie()">Delete</button>
+                <button class="edit" onclick="edit_movie()">Edit</button>
+                <button class="delete" onclick="delete_movie()">Delete</button>
             </td>
-          </tr>
+        </tr>
 
-          <tr>
+        <tr>
             <td>Pather Panchali</td>
             <td class="poster-container">
-              <img
-                src="https://image.tmdb.org/t/p/w1280/frZj5djlU9hFEjMcL21RJZVuG5O.jpg"
-                class="poster"
-              />
+                <img
+                        src="https://image.tmdb.org/t/p/w1280/frZj5djlU9hFEjMcL21RJZVuG5O.jpg"
+                        class="poster"
+                />
             </td>
             <td>1955</td>
             <td>8.3</td>
             <td>Bengali</td>
             <td class="actions">
-              <button class="edit" onclick="edit_movie()">Edit</button>
-              <button class="delete" onclick="delete_movie()">Delete</button>
+                <button class="edit" onclick="edit_movie()">Edit</button>
+                <button class="delete" onclick="delete_movie()">Delete</button>
             </td>
-          </tr>
-          <tr>
+        </tr>
+        <tr>
             <td><input type="text" id="new_title" placeholder="Title"/></td>
             <td><input type="url" id="new_poster" placeholder="Poster URL"/></td>
             <td><input type="number" id="new_year" placeholder="Release Year"/></td>
             <td><input type="number" id="new_rating" placeholder="Rating"/></td>
             <td><input type="text" id="new_language" placeholder="Language"/></td>
             <td class="actions">
-              <button class="add" onclick="add_movie()">Add</button>
-          </tr>
+                <button class="add" onclick="add_movie()">Add</button>
+        </tr>
         </tbody>
-      </table>
-    </div>
-  </body>
+    </table>
+</div>
+</body>
 </html>
