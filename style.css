@@ -6,21 +6,19 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    margin: 0;
+    margin: auto;
 }
 
 #data_table {
     margin: auto;
-    align-items: center;
-    width: 100%;
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 th {
-    background-color: red;
-    font-size: larger;
+    background-color: #FF5500;
+    font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
     border-right: 1px solid #dddddd;
@@ -29,6 +27,7 @@ th {
 
 tr {
     border-bottom: 1px solid #dddddd;
+    height: 3rem;
 }
 
 td {
@@ -37,12 +36,31 @@ td {
     border-right: 1px solid #dddddd;
 }
 
+.year, .rating {
+    width: 80px;
+}
+
+.language {
+    width: 120px;
+}
+
+td.rating, td.language {
+    width: 120px;
+    text-align: center;
+}
+
 .poster-container {
     padding: 7px;
 }
 
-.poster {
-    width: 80px;
+
+.new_language, .new_rating {
+    width: 120px;
+    white-space: nowrap;
+}
+
+.poster-container .poster {
+    width: 55%;
     height: 120px;
     border-radius: 5px;
     margin: 0 auto;

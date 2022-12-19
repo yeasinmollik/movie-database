@@ -10,30 +10,36 @@
 </head>
 
 <body>
-<div class="wrapper">
+<header>
+    <h1>Movie DB</h1>
+    <form id="form">
+        <input type="text" id="search" placeholder="Search" class="search"/>
+    </form>
+</header>
+<div id="wrapper">
     <table id="data_table">
         <thread>
             <tr>
-                <th>Title</th>
-                <th>Poster</th>
-                <th>Year</th>
-                <th>Rating</th>
-                <th>Language</th>
-                <th>Actions</th>
+                <th class="title">Title</th>
+                <th class="poster">Poster</th>
+                <th class="year">Year</th>
+                <th class="rating">Rating</th>
+                <th class="language">Language</th>
+                <th class="actions">Actions</th>
             </tr>
         </thread>
         <tbody id="table_body">
         <tr>
-            <td>Harry Potter</td>
+            <td class="title">Harry Potter</td>
             <td class="poster-container">
                 <img
                         src="https://image.tmdb.org/t/p/w1280/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
                         class="poster"
                 />
             </td>
-            <td>2001</td>
-            <td>7.6</td>
-            <td>English</td>
+            <td class="year">2001</td>
+            <td class="rating">7.6</td>
+            <td class="language">English</td>
             <td class="actions">
                 <button class="edit" onclick="edit_movie()">Edit</button>
                 <button class="delete" onclick="delete_movie()">Delete</button>
@@ -41,16 +47,16 @@
         </tr>
 
         <tr>
-            <td>Titanic</td>
+            <td class="title">Titanic</td>
             <td class="poster-container">
                 <img
                         src="https://image.tmdb.org/t/p/w1280/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
                         class="poster"
                 />
             </td>
-            <td>1997</td>
-            <td>7.9</td>
-            <td>English</td>
+            <td class="year">1997</td>
+            <td class="rating">7.9</td>
+            <td class="language">English</td>
             <td class="actions">
                 <button class="edit" onclick="edit_movie()">Edit</button>
                 <button class="delete" onclick="delete_movie()">Delete</button>
@@ -58,27 +64,27 @@
         </tr>
 
         <tr>
-            <td>Pather Panchali</td>
+            <td class="title">Pather Panchali</td>
             <td class="poster-container">
                 <img
                         src="https://image.tmdb.org/t/p/w1280/frZj5djlU9hFEjMcL21RJZVuG5O.jpg"
                         class="poster"
                 />
             </td>
-            <td>1955</td>
-            <td>8.3</td>
-            <td>Bengali</td>
+            <td class="year">1955</td>
+            <td class="rating">8.3</td>
+            <td class="language">Bengali</td>
             <td class="actions">
                 <button class="edit" onclick="edit_movie()">Edit</button>
                 <button class="delete" onclick="delete_movie()">Delete</button>
             </td>
         </tr>
-        <tr>
-            <td><input type="text" id="new_title" placeholder="Title"/></td>
-            <td><input type="url" id="new_poster" placeholder="Poster URL"/></td>
-            <td><input type="number" id="new_year" placeholder="Release Year"/></td>
-            <td><input type="number" id="new_rating" placeholder="Rating"/></td>
-            <td><input type="text" id="new_language" placeholder="Language"/></td>
+        <tr class="new_movie">
+            <td><input type="text" id="new_title" class="title" placeholder="Title"/></td>
+            <td><input type="url" id="new_poster" class='poster' placeholder="Poster URL"/></td>
+            <td><input type="number" id="new_year" class="year" placeholder="Year"/></td>
+            <td><input type="number" id="new_rating" class="rating" placeholder="Rating"/></td>
+            <td><input type="text" id="new_language" class="language" placeholder="Language"/></td>
             <td class="actions">
                 <button class="add" onclick="add_movie()">Add</button>
         </tr>
