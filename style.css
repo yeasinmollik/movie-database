@@ -23,6 +23,7 @@ th {
     text-align: center;
     border-right: 1px solid #dddddd;
     font-weight: bold;
+    height: 5rem;
 }
 
 tr {
@@ -90,4 +91,20 @@ td.rating, td.language {
 
 .form-control:hover, .form-control:focus {
     box-shadow: inset 0 0 5px #0002;
+}
+
+/*make the title color bold*/
+td.title {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+td.year {
+    font-weight: bold;
+    font-size: medium;
+}
+
+td.rating, td.language {
+    font-weight: bold;
+    font-size: medium;
 }

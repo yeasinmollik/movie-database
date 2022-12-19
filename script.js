@@ -42,16 +42,16 @@ const save_movie = () => {
     const rating = document.getElementById('edit_rating').value;
     const language = document.getElementById('edit_language').value;
     row.innerHTML = `
-    <td>${title}</td>
+    <td class="title">${title}</td>
     <td class="poster-container">
       <img
         src="${poster}"
         class="poster"
        alt="${title}"/>
     </td>
-    <td>${year}</td>
-    <td>${rating}</td>
-    <td>${language}</td>
+    <td class="year">${year}</td>
+    <td class="rating">⭐${rating}</td>
+    <td class="language">${language}</td>
     <td class="actions">
       <button class="edit" onclick="edit_movie()">Edit</button>
       <button class="delete" onclick="delete_movie()">Delete</button>
@@ -65,7 +65,7 @@ const edit_movie = () => {
     const title = row.children[0].innerHTML;
     const poster = row.children[1].children[0].src;
     const year = row.children[2].innerHTML;
-    const rating = row.children[3].innerHTML;
+    const rating = row.children[3].innerHTML.substring(1);
     const language = row.children[4].innerHTML;
 
     row.innerHTML = `
