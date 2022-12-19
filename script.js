@@ -69,13 +69,13 @@ const edit_movie = () => {
     const language = row.children[4].innerHTML;
 
     row.innerHTML = `
-    <td><input type="text" id="edit_title" class='title' value="${title}"></td>
+    <td><input type="text" id="edit_title" class='title, form-control' value="${title}"></td>
     <td class="poster-container">
-        <input type="text" id="edit_poster" class="poster" value="${poster}">
+        <input type="text" id="edit_poster" class="poster, form-control" value="${poster}">
     </td>
-    <td><input type="text" id="edit_year" class="year" value="${year}"></td>
-    <td><input type="text" id="edit_rating" class="rating"  value="${rating}"></td>
-    <td><input type="text" id="edit_language" class="language" value="${language}"></td>
+    <td><input type="text" id="edit_year" class="year, form-control" value="${year}"></td>
+    <td><input type="text" id="edit_rating" class="rating, form-control"  value="${rating}"></td>
+    <td><input type="text" id="edit_language" class="language, form-control" value="${language}"></td>
     <td class="actions">
         <button class="save" onclick="save_movie()">Save</button>
     </td>
