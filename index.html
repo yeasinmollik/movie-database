@@ -16,7 +16,9 @@
 <header>
     <h1 id="site-title">Movies</h1>
     <form id="search-bar">
-        <input type="text" id="search" placeholder="Search" class="search"/>
+        <!--        search bar-->
+        <input type="text" id="search" class="search" placeholder="Search for a movie..."
+               onkeyup="search_movie(this.value)"/>
     </form>
 </header>
 <div id="wrapper">

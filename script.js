@@ -99,3 +99,18 @@ const delete_movie = () => {
     console.log(row)
     row.parentNode.removeChild(row);
 }
+
+const search_movie = () => {
+    const search = document.getElementById('search').value;
+    const table = document.getElementById('table_body');
+    console.log(search);
+    const rows = table.getElementsByTagName('tr');
+    for (let i = 0; i   < rows.length - 1; i++) {
+        const title = rows[i].children[0].innerHTML;
+        if (title.toLowerCase().indexOf(search.toLowerCase()) > -1) {
+            rows[i].style.display = '';
+        } else {
+            rows[i].style.display = 'none';
+        }
+    }
+}
