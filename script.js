@@ -100,10 +100,9 @@ const delete_movie = () => {
     row.parentNode.removeChild(row);
 }
 
-const search_movie = () => {
-    const search = document.getElementById('search').value;
-    const table = document.getElementById('table_body');
+const search_movie = (search) => {
     console.log(search);
+    const table = document.getElementById('table_body');
     const rows = table.getElementsByTagName('tr');
     for (let i = 0; i   < rows.length - 1; i++) {
         const title = rows[i].children[0].innerHTML;
