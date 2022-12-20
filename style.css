@@ -7,10 +7,11 @@
 /*header in the center*/
 header {
     background-color: firebrick;
-    width: 80%;
+    width: 60%;
     min-width: 800px;
     margin: auto;
     padding: 20px;
+
 }
 
 /*search-bar decoration*/
@@ -59,7 +60,7 @@ body {
     border-collapse: collapse;
     overflow: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    width: 80%;
+    width: 60%;
 }
 
 th {
@@ -107,11 +108,14 @@ td.rating, td.language {
     white-space: nowrap;
 }
 
+.poster-container{
+    width: 220px;
+}
+
 .poster-container .poster {
-    width: 55%;
-    height: 120px;
+    height: 150px;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 #edit_poster {
