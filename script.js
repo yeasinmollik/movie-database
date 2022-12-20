@@ -17,7 +17,7 @@ const add_movie = () => {
            alt="${title}"/>
         </td>
         <td class="year">${year}</td>
-        <td class="rating">${rating}</td>
+        <td class="rating">⭐${rating}</td>
         <td class="language">${language}</td>
         <td class="actions">
           <button class="edit" onclick="edit_movie()">Edit</button>
