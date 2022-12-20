@@ -108,7 +108,7 @@ td.rating, td.language {
     white-space: nowrap;
 }
 
-.poster-container{
+.poster-container {
     width: 220px;
 }
 
@@ -160,4 +160,9 @@ td.year {
 td.rating, td.language {
     font-weight: bold;
     font-size: medium;
+}
+
+footer {
+    text-align: center;
+    min-width: 800px;
 }
