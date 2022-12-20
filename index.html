@@ -44,9 +44,15 @@
             <td class="year">2001</td>
             <td class="rating">⭐7.6</td>
             <td class="language">English</td>
-            <td class="actions">
-                <button class="edit" onclick="edit_movie()">Edit</button>
-                <button class="delete" onclick="delete_movie()">Delete</button>
+            <td width="50px" class="actions">
+                <div class="action_container">
+                    <button class="success edit" onclick="edit_movie()">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                    <button class="danger delete" onclick="delete_movie()">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </div>
             </td>
         </tr>
 
@@ -61,9 +67,15 @@
             <td class="year">1997</td>
             <td class="rating">⭐7.9</td>
             <td class="language">English</td>
-            <td class="actions">
-                <button class="edit" onclick="edit_movie()">Edit</button>
-                <button class="delete" onclick="delete_movie()">Delete</button>
+            <td width="50px" class="actions">
+                <div class="action_container">
+                    <button class="success edit" onclick="edit_movie()">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                    <button class="danger delete" onclick="delete_movie()">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </div>
             </td>
         </tr>
 
@@ -78,20 +90,26 @@
             <td class="year">1955</td>
             <td class="rating">⭐8.3</td>
             <td class="language">Bengali</td>
-            <td class="actions">
-                <button class="edit" onclick="edit_movie()">Edit</button>
-                <button class="delete" onclick="delete_movie()">Delete</button>
+            <td width="50px" class="actions">
+                <div class="action_container">
+                    <button class="success edit" onclick="edit_movie()">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                    <button class="danger delete" onclick="delete_movie()">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </div>
             </td>
         </tr>
         <tr class="new_movie">
-            <td><input type="text" id="new_title" class="title, form-control" placeholder="Title"/></td>
-            <td><input type="url" id="new_poster" class='poster, form-control' placeholder="Poster URL"/></td>
-            <td><input type="number" id="new_year" class="year, form-control" placeholder="Year"/></td>
-            <td><input type="number" id="new_rating" class="rating, form-control" placeholder="Rating"/></td>
-            <td><input type="text" id="new_language" class="language, form-control" placeholder="Language"/></td>
+            <td><input type="text" id="new_title" class="title form-control" placeholder="Title"/></td>
+            <td><input type="url" id="new_poster" class='poster form-control' placeholder="Poster URL"/></td>
+            <td><input type="number" id="new_year" class="year form-control" placeholder="Year"/></td>
+            <td><input type="number" id="new_rating" class="rating form-control" placeholder="Rating"/></td>
+            <td><input type="text" id="new_language" class="language form-control" placeholder="Language"/></td>
             <td width="50px" class="actions">
                 <div class="action_container">
-                    <button class="success, add" onclick="add_movie()">
+                    <button class="success add" onclick="add_movie()">
                         <i class="fa fa-plus"></i>
                     </button>
                 </div>

@@ -19,9 +19,15 @@ const add_movie = () => {
         <td class="year">${year}</td>
         <td class="rating">⭐${rating}</td>
         <td class="language">${language}</td>
-        <td class="actions">
-          <button class="edit" onclick="edit_movie()">Edit</button>
-          <button class="delete" onclick="delete_movie()">Delete</button>
+        <td width="50px" class="actions">
+            <div class="action_container">
+                <button class="success edit" onclick="edit_movie()">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </button>
+                <button class="danger delete" onclick="delete_movie()">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
+            </div>
         </td>
     `
         document.getElementById('new_title').value = '';
@@ -52,15 +58,21 @@ const save_movie = () => {
     <td class="year">${year}</td>
     <td class="rating">⭐${rating}</td>
     <td class="language">${language}</td>
-    <td class="actions">
-      <button class="edit" onclick="edit_movie()">Edit</button>
-      <button class="delete" onclick="delete_movie()">Delete</button>
+    <td width="50px" class="actions">
+        <div class="action_container">
+            <button class="success edit" onclick="edit_movie()">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+            <button class="danger delete" onclick="delete_movie()">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+        </div>
     </td>
     `
 }
 
 const edit_movie = () => {
-    const row = event.target.parentNode.parentNode;
+    const row = event.target.closest('tr');
     console.log(row);
     const title = row.children[0].innerHTML;
     const poster = row.children[1].children[0].src;
@@ -69,13 +81,13 @@ const edit_movie = () => {
     const language = row.children[4].innerHTML;
 
     row.innerHTML = `
-    <td><input type="text" id="edit_title" class='title, form-control' value="${title}"></td>
+    <td><input type="text" id="edit_title" class='title form-control' value="${title}"></td>
     <td class="poster-container">
-        <input type="text" id="edit_poster" class="poster, form-control" value="${poster}">
+        <input type="text" id="edit_poster" class="poster form-control" value="${poster}">
     </td>
-    <td><input type="text" id="edit_year" class="year, form-control" value="${year}"></td>
-    <td><input type="text" id="edit_rating" class="rating, form-control"  value="${rating}"></td>
-    <td><input type="text" id="edit_language" class="language, form-control" value="${language}"></td>
+    <td><input type="text" id="edit_year" class="year form-control" value="${year}"></td>
+    <td><input type="text" id="edit_rating" class="rating form-control"  value="${rating}"></td>
+    <td><input type="text" id="edit_language" class="language form-control" value="${language}"></td>
     <td class="actions">
         <button class="save" onclick="save_movie()">Save</button>
     </td>
@@ -83,6 +95,7 @@ const edit_movie = () => {
 }
 
 const delete_movie = () => {
-    const row = event.target.parentNode.parentNode;
+    const row = event.target.closest('tr');
+    console.log(row)
     row.parentNode.removeChild(row);
 }
