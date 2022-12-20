@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous"/>
     <title>Document</title>
 </head>
 
@@ -26,6 +29,7 @@
                 <th class="rating">Rating</th>
                 <th class="language">Lang.</th>
                 <th class="actions">Modify</th>
+
             </tr>
         </thread>
         <tbody id="table_body">
@@ -85,8 +89,13 @@
             <td><input type="number" id="new_year" class="year, form-control" placeholder="Year"/></td>
             <td><input type="number" id="new_rating" class="rating, form-control" placeholder="Rating"/></td>
             <td><input type="text" id="new_language" class="language, form-control" placeholder="Language"/></td>
-            <td class="actions">
-                <button class="add" onclick="add_movie()">Add</button>
+            <td width="50px" class="actions">
+                <div class="action_container">
+                    <button class="success, add" onclick="add_movie()">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </td>
         </tr>
         </tbody>
     </table>
